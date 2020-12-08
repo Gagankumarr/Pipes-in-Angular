@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appsix';
+  name="bruce"
+  disabledBox=true;
+  enableBox()
+  {
+    this.disabledBox=false
+  }
 }
