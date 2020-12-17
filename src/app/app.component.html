@@ -1,13 +1,14 @@
-<h2>hey </h2>
-<input type="text" [value]=name >
-<br><br>
-<input type="text" value={{name}} >
-<br>
-<br>
+<h2>Using pipes</h2>
+<!--  using property in string -->
+<h2>All letters in capital --->{{name | uppercase}}</h2>
+<h2>All letters in small -----> {{name | lowercase}}</h2>
+<h2>first letter of each word is capital --->{{name | titlecase}}</h2>
 
-<input type="text" [disabled]="disabledBox" [value]=name >
-<br><br>
-<input type="text" disable={{disabledBox}} value={{name}} >
-<br>
-<br>
-<button (click)="enableBox()">Enable text box</button>
+<!-- displaying date -->
+<h2>Today's date is {{today |date: 'fullDate'}}</h2>
+
+<!-- string functions like slicing and all -->
+<h2>{{str | slice:1}}</h2>
+
+<!-- currency modify -->
+<h2>{{amt |currency:'USD'}}</h2>

@@ -7,10 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appsix';
-  name="bruce"
-  disabledBox=true;
-  enableBox()
-  {
-    this.disabledBox=false
-  }
+  name="bruce malhotra"
+  today=Date.now()
+  str='hello akash'
+  amt=100
 }
